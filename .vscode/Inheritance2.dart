@@ -21,6 +21,7 @@ class Laptop{
 }
 
 class Acer extends Laptop {
+          
 
   Acer() : super('acer', '3000');
 
