@@ -1,20 +1,11 @@
 
-
-void main(){
+import 'Encapsulation 2.dart';
+void main(){ 
 Person person = Person("Jhone", 25);
 person.Info();
+person.nameOne;
+person.ageOne;
 }
 
-class Person {
-  String? _name;
-  int?_age;
+  
 
-  Person(this._name, this._age){}
-
-  void Info(){
-    print(_name);
-    print(_age);
-  }
-
-
-}
