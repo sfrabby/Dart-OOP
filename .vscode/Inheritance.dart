@@ -1,9 +1,13 @@
 void main(){
-Teacher teacher = Teacher();
-teacher.name = "Fazle";
-teacher.age = 20;
+Student student = Student();
+student.name = "Fazle";
+student.age = 20;
+student.sem = "Third";
+student.reg = "1234567";
 
-teacher.InfoDisply();
+
+student.InfoDisply();
+student.StudentInfo();
 }
 
 class Teacher {
@@ -17,3 +21,15 @@ class Teacher {
 
   }
 }
+
+class Student extends Teacher {
+  String ? reg;
+  String ? sem;
+
+  void StudentInfo(){
+    print("Registration : $reg");
+    print("Smemster : $sem");
+  }
+
+}
+
